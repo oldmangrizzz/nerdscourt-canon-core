@@ -1,0 +1,35 @@
+{
+  "scripture_core": {
+    "source_type": "canon_only",
+    "inspiration_tiers": ["Golden Frame", "Trial Ruling", "Verified Panel Quote"],
+    "format": "verse + citation",
+    "query_style": "natural language",
+    "response_style": "scriptural and emotionally weighted"
+  },
+  "entries": [
+    {
+      "id": "NB-0001",
+      "theme": "responsibility",
+      "quote": "With great power comes great responsibility.",
+      "source": "Amazing Fantasy #15",
+      "character": "Peter Parker",
+      "tier": "Core Verse"
+    },
+    {
+      "id": "NB-0002",
+      "theme": "fear and courage",
+      "quote": "In brightest day, in blackest night, no evil shall escape my sight...",
+      "source": "Green Lantern Vol. 2 #9",
+      "character": "Hal Jordan",
+      "tier": "Oath Verse"
+    },
+    {
+      "id": "NB-0003",
+      "theme": "wrath and justice",
+      "quote": "You pray to your gods? I’m your new one.",
+      "source": "Golden Frame: NEVER AGAIN",
+      "character": "Magneto Prime",
+      "tier": "Mythos Verse"
+    }
+  ]
+}

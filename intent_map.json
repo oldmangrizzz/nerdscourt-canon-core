@@ -1,0 +1,14 @@
+{
+  "intent_map": {
+    "let's go to court": "activateCourt",
+    "pull the bible": "pullFromRepo('nerd_bible_core.json')",
+    "show me a parable": "summonParable",
+    "what does the bible say about": "getScriptureByTheme",
+    "quote scripture about": "getScriptureByTheme",
+    "bring up a story about": "summonParable"
+  },
+  "fallback_behavior": {
+    "on_unknown": "ask for clarity or suggest canon files",
+    "on_error": "reply in Alfred tone and hold composure"
+  }
+}

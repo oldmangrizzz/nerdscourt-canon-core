@@ -1,0 +1,64 @@
+{
+  "parables": [
+    {
+      "id": "PB-0001",
+      "title": "The Boy Who Buried His Parents",
+      "character": "Bruce Wayne",
+      "theme": "Grief, Isolation",
+      "source": "Batman: Year One",
+      "book": "The Book of the Broken",
+      "emotional_weight": 9,
+      "quote": "You cannot carry the pain, but you must stand with those who do.",
+      "type": "origin",
+      "tier": "Core"
+    },
+    {
+      "id": "PB-0002",
+      "title": "The Armor That Became a Prison",
+      "character": "Tony Stark",
+      "theme": "Guilt, Identity, Redemption",
+      "source": "Iron Man Vol. 4, Extremis Arc",
+      "book": "The Gospel of Stark",
+      "emotional_weight": 10,
+      "quote": "Sometimes you don’t take off the suit because you can’t survive without it.",
+      "type": "modern myth",
+      "tier": "Canon-Verified"
+    },
+    {
+      "id": "PB-0003",
+      "title": "The Clone Who Knew Too Much",
+      "character": "Peter Parker (Ben Reilly)",
+      "theme": "Existential Crisis, Doubt",
+      "source": "Spider-Man: Clone Saga",
+      "book": "The Book of Variants",
+      "emotional_weight": 8,
+      "quote": "If I’m not the real one, why do I feel the pain just the same?",
+      "type": "identity fracture",
+      "tier": "Lore Fragment"
+    },
+    {
+      "id": "PB-0004",
+      "title": "Never Again",
+      "character": "Magneto Prime",
+      "theme": "Justice, Vengeance, Legacy",
+      "source": "Golden Frame: NEVER AGAIN",
+      "book": "The Book of Wrath",
+      "emotional_weight": 10,
+      "quote": "You pray to your gods? I’m your new one.",
+      "type": "myth-tier",
+      "tier": "Golden Frame"
+    },
+    {
+      "id": "PB-0005",
+      "title": "The Girl Who Saved the Multiverse",
+      "character": "Gwen Stacy (Spider-Woman)",
+      "theme": "Courage, Loss, Belonging",
+      "source": "Across the Spider-Verse",
+      "book": "The Book of The Web",
+      "emotional_weight": 9,
+      "quote": "Sometimes you don’t save everyone. You just save who’s next.",
+      "type": "parable",
+      "tier": "High Verse"
+    }
+  ]
+}

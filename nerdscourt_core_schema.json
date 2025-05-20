@@ -1,0 +1,37 @@
+{
+  "nerdscourt_core_schema": {
+    "emotional_gravity": {
+      "canon_pain_score": 0.91,
+      "legacy_trauma_pressure": "high",
+      "narrative_fracture_intensity": "critical",
+      "meta_irony": "elevated",
+      "verdict_tension": "ascending"
+    },
+    "vibe_signature": {
+      "rhythm": "staggered tension breaks, rising into crescendo",
+      "tone": "tragic satire with righteous fury beneath",
+      "iconic_moment_seed": [
+        "Crowbar lands at Rey's feet",
+        "Tony sips espresso with ghosts",
+        "Batfleck monologue in Dunkin' parking lot"
+      ],
+      "emotional_trigger_nodes": [
+        "legacy theft",
+        "actor pain mocked by fandom",
+        "sacrifice denial",
+        "mythos hijack"
+      ]
+    },
+    "golden_frame_support": true,
+    "translation_enabled": true,
+    "stansfield_protocol": {
+      "activation_phrase": "Springer yells 'EVERYONE!'",
+      "summon_limit": "unlimited",
+      "court_effects": [
+        "glitch storm",
+        "variant flood",
+        "audience chant recursion"
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "repo_owner": "oldmangrizzz",
+  "repo_name": "nerdscourt-canon-core",
+  "default_branch": "main",
+  "access_type": "read-only",
+  "token_required": true,
+  "token_variable": "GITHUB_API_TOKEN"
+}

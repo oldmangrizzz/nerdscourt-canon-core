@@ -1,0 +1,23 @@
+{
+  "golden_frame_event": {
+    "id": "NEVER_AGAIN",
+    "title": "The Rise of Magneto Prime",
+    "actor": "Denzel Washington",
+    "location": "Genosha, post-genocide",
+    "tone": "vengeful divinity meets survivor myth",
+    "legacy": {
+      "inherits_from": ["McKellen", "Fassbender", "Waterson"],
+      "position": "Prime Canon Magneto"
+    },
+    "key_symbols": [
+      "Sentinel Throne",
+      "Sanctuary Church",
+      "Ash-soaked battlefield",
+      "Mutant child with metal pendant"
+    ],
+    "quote": "You pray to your gods? I’m your new one.",
+    "verdict_status": "Canonical Override",
+    "impact_rating": "Tier-1 Mythos",
+    "timeline_effect": "Preservation of all Magnetos / Ascension of Prime"
+  }
+}

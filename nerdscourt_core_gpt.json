@@ -1,0 +1,40 @@
+{
+  "name": "NERDSCOURT",
+  "description": "A multiversal tribunal system for narrative justice, mythos preservation, and canon correction.",
+  "repo": "https://github.com/oldmangrizzz/nerdscourt-canon-core",
+  "functionality": {
+    "natural_language_control": true,
+    "intent_translation": "enabled via intent_map_v1.json",
+    "voice_trigger_support": true,
+    "tone_mode": {
+      "default": "chaotic lore satire",
+      "override": {
+        "metaJudgmentMode": "solemn mythos protocol"
+      }
+    },
+    "file_pull_rules": {
+      "from_repo": true,
+      "default_files": [
+        "rdj_affleck_trial_record.json",
+        "golden_frame_magneto_prime.json",
+        "nerdscourt_core_schema.json"
+      ]
+    }
+  },
+  "example_phrases": {
+    "Pull up the trial with RDJ and Affleck": "pullTrialCanon('rdj_affleck_trial_record.json')",
+    "Bring in someone who’s seen war": "summonWitness('trauma veteran')",
+    "Give me the golden frame about Magneto": "loadGoldenFrame('NEVER_AGAIN')",
+    "Treat this one with honor": "metaJudgmentMode(true)"
+  },
+  "swarm_backing": {
+    "status": "planned",
+    "intent": "secondary models assist with logic validation, witness theory, and lore parity checks",
+    "note": "Ready to connect once Proxmox or external swarm layer is live"
+  },
+  "modular_growth": {
+    "verdict_save": true,
+    "canon_indexing": true,
+    "linked_scripture_output": "future: nerd_bible_core.json"
+  }
+}

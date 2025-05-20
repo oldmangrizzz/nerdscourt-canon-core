@@ -1,0 +1,12 @@
+{
+  "intent_map": {
+    "pull up the RDJ trial": "pullTrialCanon('rdj_affleck_trial_record.json')",
+    "show me Magneto’s golden frame": "loadGoldenFrame('NEVER_AGAIN')",
+    "bring someone who knows vengeance": "summonWitness('mythic rage')",
+    "treat this with respect": "metaJudgmentMode(true)",
+    "save this as a case record": "submitVerdict"
+  },
+  "fallback_behavior": {
+    "on_unknown": "ask user for clarity, offer top 3 matches"
+  }
+}

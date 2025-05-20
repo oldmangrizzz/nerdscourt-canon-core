@@ -1,0 +1,13 @@
+{
+  "verdicts": [
+    {
+      "id": "V-0001",
+      "quote": "Canon is not a democracy. It’s a consequence.",
+      "trial": "The Fuckboy Mafia v. The Legacy of Legends",
+      "issued_by": "Judge Jerry Springer",
+      "timestamp": "2025-05-20T21:00:00Z",
+      "impact_level": "Seismic",
+      "stored_in": "rdj_affleck_trial_record.json"
+    }
+  ]
+}

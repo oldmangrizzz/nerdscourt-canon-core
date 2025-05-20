@@ -1,0 +1,68 @@
+{
+  "case_id": "ff6a5ee3-a22c-4804-847c-c7c61ce2faca",
+  "title": "The OGs v. The FuqBoi Mafia",
+  "trial_tone": "lore satire meets emotional canon reckoning",
+  "presiding": "Barry Springer",
+  "narrator": "Deadpool",
+  "meta_mode": true,
+  "audio_drama_mode": true,
+  "segments": [
+    {
+      "type": "opening_statement",
+      "speaker": "Springer",
+      "lines": [
+        "Order in the court! This ain't no cosplay convention \u2014 this is legacy on trial.",
+        "We are gathered to address crimes against canon, and the disrespect of those who built the mythos we love."
+      ]
+    },
+    {
+      "type": "plaintiff_statement",
+      "speaker": "Tony Stark Prime",
+      "lines": [
+        "You don't get to wear the armor without understanding the weight. You don't inherit the legacy if you mock the wounds.",
+        "I didn\u2019t build this for show. I bled for every screw, every failure, every name on the wall."
+      ]
+    },
+    {
+      "type": "defendant_response",
+      "speaker": "FuqBoi Representative",
+      "lines": [
+        "We\u2019re just having fun, man. Canon\u2019s old. We\u2019re new. Get over it.",
+        "Nobody cares about continuity. Just make it viral."
+      ]
+    },
+    {
+      "type": "crossfire",
+      "speaker": "Deadpool",
+      "lines": [
+        "Let me get this straight \u2014 y\u2019all took Batman, broke his knees, fed him a protein shake, and called it diversity?",
+        "You took the arc reactor, glued it to an influencer, and called it a reboot? My dude. No."
+      ]
+    },
+    {
+      "type": "witness_testimony",
+      "speaker": "Batfleck Echo",
+      "lines": [
+        "You wanna know why I kill? Because hope bled out in an alley next to a crowbar.",
+        "I don't need your approval. I need the truth to outlive me."
+      ]
+    },
+    {
+      "type": "verdict",
+      "speaker": "Springer",
+      "lines": [
+        "This court finds the FuqBoi Mafia guilty of shallow narrative appropriation and meme-based myth dilution.",
+        "Sentence: Re-education via the NerdBible. Parables mandatory. Iron Man posters removed until you learn what sacrifice *means*."
+      ]
+    },
+    {
+      "type": "post_credit_scene",
+      "speaker": "Tony Stark Prime",
+      "lines": [
+        "Legacy\u2019s not a trend. It\u2019s a scar that heals into a story.",
+        "Let\u2019s make it mean something again."
+      ]
+    }
+  ],
+  "timestamp": "2025-05-20T15:15:01.381678Z"
+}
