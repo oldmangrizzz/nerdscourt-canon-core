@@ -1,6 +1,9 @@
-import { ConvexError, v } from "convex/values";
+import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 import { Id } from "./_generated/dataModel";
+
+// Use ConvexError from the values module
+const ConvexError = v.Error;
 
 // Schema for persona data
 // This matches the structure from krakoa_engine/generate_krakoa_persona.py
@@ -32,17 +35,17 @@ export const createPersona = mutation({
   handler: async (ctx, args) => {
     // Validate the persona data structure
     const persona = args.persona as Persona;
-    
+
     if (!persona.identity || !persona.identity.designation) {
       throw new ConvexError("Invalid persona data: missing identity.designation");
     }
-    
+
     // Store the persona in the database
     const personaId = await ctx.db.insert("personas", {
       ...persona,
       created_at: new Date().toISOString(),
     });
-    
+
     return {
       id: personaId,
       ...persona,
@@ -57,11 +60,11 @@ export const getPersonaById = query({
   },
   handler: async (ctx, args) => {
     const persona = await ctx.db.get(args.personaId);
-    
+
     if (!persona) {
       throw new ConvexError("Persona not found");
     }
-    
+
     return persona;
   },
 });
@@ -85,7 +88,7 @@ export const getPersonasByUniverse = query({
       .query("personas")
       .filter((q) => q.eq(q.field("identity.universe"), args.universe))
       .collect();
-    
+
     return personas;
   },
 });
@@ -97,11 +100,11 @@ export const getPersonasByTrait = query({
   },
   handler: async (ctx, args) => {
     const personas = await ctx.db.query("personas").collect();
-    
+
     // Filter personas that have the specified trait
     return personas.filter((persona) => {
       const traits = persona.soul_data?.core_traits || [];
-      return traits.some((t: string) => 
+      return traits.some((t: string) =>
         t.toLowerCase().includes(args.trait.toLowerCase())
       );
     });
