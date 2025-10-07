@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NerdsCourt Chat</title>
+    <style>
+        body { font-family: sans-serif; }
+        #messages { list-style-type: none; margin: 0; padding: 0; }
+        #messages li { padding: 8px 12px; }
+        #messages li:nth-child(odd) { background: #eee; }
+    </style>
+</head>
+<body>
+    <h1>NerdsCourt Chat</h1>
+    <div>
+        <button id="connectButton">Connect</button>
+        <button id="disconnectButton" disabled>Disconnect</button>
+        <span id="status">Disconnected</span>
+    </div>
+    <ul id="messages"></ul>
+    <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+    <script>
+        const connectButton = document.getElementById('connectButton');
+        const disconnectButton = document.getElementById('disconnectButton');
+        const status = document.getElementById('status');
+        const form = document.getElementById('form');
+        const input = document.getElementById('input');
+        const messages = document.getElementById('messages');
+
+        let socket;
+
+        connectButton.onclick = () => {
+            if (!socket || socket.readyState === WebSocket.CLOSED) {
+                socket = new WebSocket("ws://localhost:8765");
+
+                socket.onopen = () => {
+                    status.textContent = 'Connected';
+                    connectButton.disabled = true;
+                    disconnectButton.disabled = false;
+                    addMessage('Connected to server.');
+                };
+
+                socket.onmessage = (event) => {
+                    const data = JSON.parse(event.data);
+                    addMessage(`Server: ${JSON.stringify(data)}`);
+                };
+
+                socket.onclose = () => {
+                    status.textContent = 'Disconnected';
+                    connectButton.disabled = false;
+                    disconnectButton.disabled = true;
+                    addMessage('Disconnected from server.');
+                };
+
+                socket.onerror = (error) => {
+                    addMessage(`Error: ${error.message}`);
+                };
+            }
+        };
+
+        disconnectButton.onclick = () => {
+            if (socket && socket.readyState === WebSocket.OPEN) {
+                socket.close();
+            }
+        };
+
+        form.onsubmit = (e) => {
+            e.preventDefault();
+            if (!socket || socket.readyState !== WebSocket.OPEN) {
+                alert("You are not connected to the server.");
+                return;
+            }
+            const message = input.value;
+            if (message) {
+                try {
+                    const jsonMessage = JSON.parse(message);
+                    socket.send(JSON.stringify(jsonMessage));
+                    addMessage(`You: ${message}`);
+                    input.value = '';
+                } catch (e) {
+                    alert('Invalid JSON. Please enter a valid JSON command.');
+                }
+            }
+        };
+
+        function addMessage(message) {
+            const item = document.createElement('li');
+            item.textContent = message;
+            messages.appendChild(item);
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    </script>
+</body>
+</html>
